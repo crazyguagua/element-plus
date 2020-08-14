@@ -147,3 +147,7 @@ export function rafThrottle(fn: (args: Record<string, unknown>) => unknown): (..
 export const objToArray = castArray
 
 export { isVNode } from 'vue'
+
+export function firstUpperCase(str: string): string {
+  return str.toLowerCase().replace(/( |^)[a-z]/g, (L) => L.toUpperCase())
+}
