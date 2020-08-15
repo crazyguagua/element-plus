@@ -21,6 +21,7 @@ import ElPageHeader from '@element-plus/page-header'
 import ElRadio from '@element-plus/radio'
 import ElScrollBar from '@element-plus/scrollbar'
 import ElCollapse from '@element-plus/collapse'
+import ElTimeSelect from '@element-plus/timeselect'
 
 export {
   ElAvatar,
@@ -45,6 +46,7 @@ export {
   ElScrollBar,
   ElRadio,
   ElCollapse,
+  ElTimeSelect
 }
 
 export default function install(app: App): void {
@@ -70,4 +72,5 @@ export default function install(app: App): void {
   ElScrollBar(app)
   ElRadio(app)
   ElCollapse(app)
+  ElTimeSelect(app)
 }
