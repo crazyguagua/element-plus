@@ -1,5 +1,2 @@
-import ClickOutside from './click-outside/index'
-
-export {
-  ClickOutside,
-}
+export { default as ClickOutside } from './click-outside'
+export { default as TrapFocus } from './trap-focus'

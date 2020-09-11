@@ -1,6 +1,15 @@
 <template>
-  <div style="margin: 20px;">
-    <el-input v-model="input" placeholder="请输入内容" />
+  <div>
+    <el-button @click="visible = true">{{ value1 }}</el-button>
+    <el-dialog v-model="visible" :destroy-on-close="false">
+      dialog content
+      <el-button @click="innerVisible = true">
+        inner button
+      </el-button>
+      <el-dialog v-model="innerVisible" destroy-on-close>
+        I am inner dialog
+      </el-dialog>
+    </el-dialog>
   </div>
 </template>
 
@@ -8,7 +17,9 @@
 export default {
   data() {
     return {
-      input: 'Hello Element UI!',
+      value1: 'TEST',
+      visible: false,
+      innerVisible: false,
     }
   },
 }
